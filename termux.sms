@@ -1,7 +1,10 @@
 #!/bin/bash
 
+
 read -p "how much : " n
+read -p "phone number : " ph
+read -p "text : " tex 
 for (( c=1; c<=$n; c++ ))
 do  
-   echo "Welcome $c times"
+    termux-sms-send -n $ph $tex
 done

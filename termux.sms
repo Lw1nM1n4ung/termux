@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "how much : " n
+for (( c=1; c<=$n; c++ ))
+do  
+   echo "Welcome $c times"
+done

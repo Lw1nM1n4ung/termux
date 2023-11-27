@@ -7,4 +7,6 @@ read -p "text : " tex
 for (( c=1; c<=$n; c++ ))
 do  
     termux-sms-send -n $ph $tex
+	sleep 2
+	echo " complete $c ."
 done

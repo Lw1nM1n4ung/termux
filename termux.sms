@@ -4,9 +4,10 @@
 read -p "how much : " n
 read -p "phone number : " ph
 read -p "text : " tex 
+read -p "Second : " second
 for (( c=1; c<=$n; c++ ))
 do  
     termux-sms-send -n $ph $tex
-	sleep 2
-	echo " complete $c ."
+	sleep $second
+	echo " complete $c time."
 done
